@@ -1,0 +1,46 @@
+@import "../reindeer/styles.css";
+
+/* Hide all captions on navigation-buttons inside the paging compnent */
+.paging div > .v-button.v-button-link.navigation-button .v-button-caption,
+  .paging div > .v-button.v-button-link.navigation-button:focus .v-button-caption,
+  .paging div > .v-button.v-button-link.navigation-button:active .v-button-caption,
+  .v-ie7 .paging  .v-button-link.navigation-button .v-button-caption,
+  .v-ie7 .paging .v-button-link.navigation-button.v-pressed .v-button-caption,
+  .paging div > .v-button.v-button-link.navigation-button.v-disabled .v-button-caption,
+  .v-ie7 .paging .v-button-link.navigation-button.v-disabled .v-button-caption {
+  display: none;
+}
+
+/*  Highlight the current page button by making it bold */
+.paging div > .v-button.v-button-link.current-page .v-button-caption,
+  .paging div > .v-button.v-button-link.current-page:focus .v-button-caption,
+  .paging div > .v-button.v-button-link.current-page:active .v-button-caption,
+  .v-ie7 .paging  .v-button-link.current-page .v-button-caption,
+  .v-ie7 .paging .v-button-link.current-page.v-pressed .v-button-caption,
+  .paging div > .v-button.v-button-link.current-page.v-disabled .v-button-caption,
+  .v-ie7 .paging .v-button-link.current-page.v-disabled .v-button-caption {
+
+  font-weight: bold;
+
+}
+
+/* Make sure we have a margin on the captions of all link-buttons inside the paging component */
+.paging div > .v-button.v-button-link .v-button-caption,
+  .paging div > .v-button.v-button-link:focus .v-button-caption,
+  .paging div > .v-button.v-button-link:active .v-button-caption,
+  .v-ie7 .paging  .v-button-link .v-button-caption,
+  .v-ie7 .paging .v-button-link.v-pressed .v-button-caption,
+  .paging div > .v-button.v-button-link.v-disabled .v-button-caption,
+  .v-ie7 .paging .v-button-link.v-disabled .v-button-caption {
+
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Sort out the spacing, and stop the up-and-downing of the icons when pressed*/
+.paging div > .v-button .v-icon,
+  .v-ie7 .paging .v-button .v-icon,
+  .paging div > .v-button.v-disabled .v-icon,
+  .v-ie7 .paging .v-button.v-disabled .v-icon {
+  margin: 1px;
+}
